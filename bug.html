@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be replaced.
+  </div>
+
+  <script>
+    // Incorrect way to modify innerHTML
+    document.getElementById("myDiv").innerHTML = "<p>This is a paragraph.</p>" + "<img src='nonexistent.jpg' alt='Image'>";
+  </script>
+</body>
+</html>
